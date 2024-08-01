@@ -42,6 +42,11 @@ export async function NavMenu({
       open_in_new_tab: false,
     },
     {
+      link: "/missions",
+      title: "Mission",
+      open_in_new_tab: false,
+    },
+    {
       link: "/events",
       title: "Events",
       open_in_new_tab: false,
