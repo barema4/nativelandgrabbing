@@ -38,7 +38,7 @@ export default async function WorkPage() {
             />
           </div>
           {
-            <div className="mt-6 w-full grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-2 xl:gap-x-8">
+            <div className="mt-6 w-full grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-3 xl:gap-x-8">
               {projects.map((project: ProjectType, i: number) => {
                 project = { ...project, title: item[i].title };
                 return <ProjectCard key={project.id} project={project} />;

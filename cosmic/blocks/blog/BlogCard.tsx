@@ -40,13 +40,13 @@ export function BlogCard({
         <div className="relative h-full">
           <img
             alt={post.title}
-            className="h-80 w-full object-cover"
+            className="h-40 w-full object-cover"
             src={`${post.metadata.image.imgix_url}?w=1200&auto=format,compression`}
           />
         </div>
         <div
           className="flex h-full flex-col justify-between rounded-b-lg border-x border-b 
-        border-transparent px-5 py-8 dark:border-gray-900 md:px-8"
+        border-transparent px-5 py-8 dark:border-gray-900"
         >
           <div className="relative z-10">
             {post.metadata.categories.map((category: any) => {
@@ -59,7 +59,7 @@ export function BlogCard({
                 </span>
               );
             })}
-            <h2 className="mt-2 text-2xl font-bold text-black dark:text-white">
+            <h2 className="mt-2 text-1xl font-semibold text-black dark:text-white">
               {post.title}
             </h2>
             <p className="line-clamp-3 w-full pt-3 text-gray-600 dark:text-gray-400">

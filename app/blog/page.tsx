@@ -15,7 +15,7 @@ export default async function BlogPage() {
           sort="-created_at"
           limit={10}
           skip={0}
-          className="mx-auto grid w-full max-w-screen-lg grid-cols-1 flex-col gap-5 pb-24 sm:grid-cols-2 lg:gap-10"
+          className="mx-auto grid w-full max-w-screen-lg grid-cols-1 flex-col gap-5 pb-24 sm:grid-cols-3 lg:gap-10"
         />
       </div>
     </main>
