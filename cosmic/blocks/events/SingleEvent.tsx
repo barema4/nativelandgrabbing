@@ -54,7 +54,7 @@ export async function SingleEvent({
           <div className="grid md:grid-cols-2 md:gap-x-8">
             <div>
               <img
-                className="aspect-square h-full w-full rounded-xl border border-zinc-100 object-cover object-center dark:border-zinc-800 lg:h-full lg:w-full"
+                className="h-full w-full rounded-xl border border-zinc-100 object-cover object-center dark:border-zinc-800 lg:h-full lg:w-full"
                 src={`${event.metadata.image.imgix_url}?w=2000&h=2000&auto=format,compression`}
                 alt={event.title}
               />

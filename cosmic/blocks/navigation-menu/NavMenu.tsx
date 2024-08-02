@@ -32,6 +32,11 @@ export async function NavMenu({
       open_in_new_tab: false,
     },
     {
+      link: "/missions",
+      title: "Mission",
+      open_in_new_tab: false,
+    },
+    {
       link: "/work",
       title: "TimeLine",
       open_in_new_tab: false,
@@ -39,11 +44,6 @@ export async function NavMenu({
     {
       link: "/blog",
       title: "Blog",
-      open_in_new_tab: false,
-    },
-    {
-      link: "/missions",
-      title: "Mission",
       open_in_new_tab: false,
     },
     {

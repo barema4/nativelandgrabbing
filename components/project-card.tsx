@@ -24,9 +24,10 @@ export function ProjectCard({ project }: { project: ProjectType }) {
       <div className="w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
         {project.metadata.image?.imgix_url && (
           <img
-            src={`${project.metadata.image.imgix_url}?w=1200&auto=format,compression`}
+            src={`https://imgix.cosmicjs.com/04355f60-b06b-11ee-9844-f9a09795e2a3-Mobile.png?w=1200&auto=format,compression`}
+            // src={`${project.metadata.image.imgix_url}?w=1200&auto=format,compression`}
             alt={project.title}
-            className="h-full w-full object-cover object-center aspect-square lg:h-full lg:w-full border border-zinc-100 dark:border-zinc-800"
+            className="h-full w-full object-cover object-center lg:h-full lg:w-full border border-zinc-100 dark:border-zinc-800"
           />
         )}
       </div>
@@ -48,9 +49,9 @@ export function ProjectCard({ project }: { project: ProjectType }) {
         vel, varius tellus.
       </div>
       <div className="flex justify-between">
-        <p className="pt-2 text-sm font-medium text-zinc-900 dark:text-zinc-50">
-          {project.metadata.client.title} ethan
-        </p>
+        {/* <p className="pt-2 text-sm font-medium text-zinc-900 dark:text-zinc-50">
+          {project.metadata.client.title}
+        </p> */}
         <p className="pt-2 text-sm font-medium text-zinc-500 dark:text-zinc-400 font-mono">
           {/* {project.metadata.year} */}
           December 31, 2023

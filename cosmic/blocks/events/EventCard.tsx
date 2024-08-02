@@ -32,7 +32,8 @@ export function EventCard({
     >
       <div className="w-full overflow-hidden group-hover:opacity-75">
         <img
-          className="h-full w-full rounded-xl object-cover object-center aspect-square lg:h-full lg:w-full border border-zinc-100 dark:border-zinc-800"
+          // className="h-full w-full rounded-xl object-cover object-center aspect-square lg:h-full lg:w-full border border-zinc-100 dark:border-zinc-800"
+          className="h-full w-full rounded-xl object-cover object-center lg:h-full lg:w-full border border-zinc-100 dark:border-zinc-800"
           src={`${event.metadata.image.imgix_url}?w=1000&h=1000&auto=format,compression`}
           alt={event.title}
         />
@@ -56,9 +57,9 @@ export function EventCard({
               <span>From</span>
               <span>{event.metadata.start_time}</span>
               <span>until</span>
-              {event.metadata.start_date !== event.metadata.end_date && (
+              {/* {event.metadata.start_date !== event.metadata.end_date && (
                 <span>{getFormattedDate(event.metadata.end_date)}</span>
-              )}
+              )} */}
               <span>{event.metadata.end_time}</span>
             </div>
             <div className="flex items-center space-x-2 text-sm font-medium text-zinc-900 dark:text-zinc-50">
