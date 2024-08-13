@@ -36,10 +36,10 @@ import React from "react";
 import { BlogCard } from "./BlogCard";
 import { posts } from "../../lib/helpers/data";
 
-const BlogList = ({ className }) => {
+const BlogList = ({ page, className }) => {
   return (
     <div class="cards">
-      {[1, 2, 3].map((post) => {
+      {(page === "home" ? posts.slice(0, 3) : posts).map((post) => {
         return <BlogCard key={post.id} post={post} />;
       })}
     </div>
