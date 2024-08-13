@@ -1,19 +1,18 @@
 import React from "react";
 import Link from "next/link";
 
-// import { urlFor } from '../lib/client';
 
 const FooterBanner = () => {
   const banner = {
-    discount: "12%",
+    discount: "Join Us AT Native LandGrab",
     largeText1: "SUMMER DISCOUNTS",
     largeText2: "COME THROUGH FAST",
-    saleTime: "",
-    smallText: "",
-    midText: "",
-    desc: "",
-    product: "",
-    buttonText: "",
+    saleTime: "Come and we fight for you",
+    smallText: "Join our community",
+    midText: "Together we can do more",
+    desc: "We are a community of people who are passionate about the land and the people who live on it.",
+    product: "Check out our latest products",
+    buttonText: "Check Out Daily Podcasts",
     image: "",
   };
 
@@ -30,14 +29,10 @@ const FooterBanner = () => {
           <p>{banner.smallText}</p>
           <h3>{banner.midText}</h3>
           <p>{banner.desc}</p>
-          {/* <Link href={`/product/${banner.product}`}>
+          <Link href={`/product/${banner.product}`}>
             <button type="button">{banner.buttonText}</button>
-          </Link> */}
+          </Link>
         </div>
-
-        {/* <img 
-          src={urlFor(banner.image)} className="footer-banner-image"
-        /> */}
       </div>
     </div>
   );
