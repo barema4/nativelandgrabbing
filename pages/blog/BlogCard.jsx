@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export function BlogCard({ post, className }) {
+export default function BlogCard({ post, className }) {
   return (
     <Link href={`/blog/single`}>
       <article class="card">
