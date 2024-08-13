@@ -86,7 +86,7 @@ export default function BlogCard({ post, className }) {
         <div className="preview__text">
           <h3>{post?.title}</h3>
           <p>
-            {post?.metadata?.content.slice(0, 100)}
+            {post?.metadata?.content?.slice(0, 100)}
             ...
           </p>
           <div class="card__bottom">Native LandGrab 3 days ago</div>
