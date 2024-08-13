@@ -6,7 +6,7 @@ export default function BlogCard({ post, className }) {
     <Link href={`/blog/single`}>
       <article class="card">
         <div class="card__preview">
-          <div className="img" role="img" aria-label={post.title}></div>
+          <div className="img" role="img" aria-label={post?.title}></div>
           <div class="card__preview__overlay">
             <svg
               class="opacity-0 group-hover:opacity-[1] transition duration-500 ease-in-out absolute top-0 right-0 bottom-0 left-0 m-auto z-[2] "
@@ -84,9 +84,9 @@ export default function BlogCard({ post, className }) {
           </div>
         </div>
         <div className="preview__text">
-          <h3>{post.title}</h3>
+          <h3>{post?.title}</h3>
           <p>
-            {post.metadata.content.slice(0, 100)}
+            {post?.metadata?.content?.slice(0, 100)}
             ...
           </p>
           <div class="card__bottom">Native LandGrab 3 days ago</div>
