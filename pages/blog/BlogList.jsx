@@ -33,8 +33,8 @@
 // }
 
 import React from "react";
-import { BlogCard } from "./BlogCard";
 import { posts } from "../../lib/helpers/data";
+import BlogCard from "./BlogCard";
 
 const BlogList = ({ page, className }) => {
   return (
