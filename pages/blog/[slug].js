@@ -1,5 +1,7 @@
 import React from "react";
 import { VideoCard } from "../../components";
+import BlogList from "./BlogList";
+import { AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
 
 const BlogDetails = ({ slug }) => {
   const bannerData = [];
@@ -8,7 +10,13 @@ const BlogDetails = ({ slug }) => {
       <VideoCard heroBanner={bannerData.length && bannerData[0]} />
       <div className="video-text">
         <h1>Lakeview Elegance</h1>
+        <p className="icons">
+          <AiFillInstagram />
+          <AiOutlineTwitter />
+        </p>
       </div>
+      <h3>Related Videos</h3>
+      <BlogList className="" />
     </div>
   );
 };

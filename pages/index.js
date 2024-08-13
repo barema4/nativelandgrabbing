@@ -13,11 +13,11 @@ const Home = () => (
     <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
     <div className="products-heading">
       <h2 className="heading-h2">MUST WATCH VIDEOS</h2>
-      <BlogList className="" />
+      <BlogList page="home" className="" />
     </div>
 
     <div className="mx-auto">
-      <SubmitButton text="watch all" className="" />
+      <SubmitButton text="watch all" path="/explore" className="" />
     </div>
 
     <div className="products-container">

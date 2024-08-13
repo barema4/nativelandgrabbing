@@ -6,7 +6,7 @@ export function BlogCard({ post, className }) {
     <Link href={`/blog/single`}>
       <article class="card">
         <div class="card__preview">
-          <div className="img" role="img" aria-label="Lakeview Elegance"></div>
+          <div className="img" role="img" aria-label={post.title}></div>
           <div class="card__preview__overlay">
             <svg
               class="opacity-0 group-hover:opacity-[1] transition duration-500 ease-in-out absolute top-0 right-0 bottom-0 left-0 m-auto z-[2] "
@@ -84,15 +84,9 @@ export function BlogCard({ post, className }) {
           </div>
         </div>
         <div className="preview__text">
-          <h3>Lakeview Elegance</h3>
+          <h3>{post.title}</h3>
           <p>
-            {`Nestled along the tranquil shores of a pristine lake, Lakeview
-          Lakeside offers an idyllic escape into nature's embrace. This
-          exquisite property combines rustic charm with modern luxury, featuring
-          a spacious, elegantly designed home with panoramic lake views. Each
-          room is crafted to maximize the connection with the natural
-          surroundings, offering large windows and outdoor spaces that blend
-          seamlessly with the serene lakeside setting.`.slice(0, 100)}
+            {post.metadata.content.slice(0, 100)}
             ...
           </p>
           <div class="card__bottom">Native LandGrab 3 days ago</div>

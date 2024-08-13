@@ -18,7 +18,7 @@ const Navbar = () => {
         </Link>
 
         {nav.map((dt, i) => (
-          <Link key={i} href="/product">
+          <Link key={i} href={dt.link}>
             <button className="nav" type="button">
               {dt.title}
             </button>

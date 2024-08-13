@@ -437,6 +437,41 @@ span.text-red {
   display: flex;
   gap: 10px;
 }
+.video-text {
+  color: #324d67;
+  margin-bottom: 30px;
+}
+.video-text .icons {
+  font-size: 25px;
+  display: flex;
+  gap: 10px;
+}
+.about-page h1,
+.mission-page h1 {
+  text-align: left;
+  font-size: 3.25rem;
+}
+.about-page h2,
+.mission-page h2 {
+  text-align: left;
+}
+.about-page p,
+.mission-page p {
+  text-align: left;
+}
+
+.mission-page ul,
+.mission-page ul {
+  text-align: left;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.mission-page span {
+  font-size: 15px;
+  font-weight: 500;
+}
+
 .cart-heading {
   display: flex;
   align-items: center;
