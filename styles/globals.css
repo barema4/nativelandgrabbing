@@ -91,6 +91,9 @@ a {
   padding: 0.7rem;
 }
 
+.navbar-container .auth:hover {
+  background: #f1ca91;
+}
 /* #db8616 */
 .nav:hover {
   color: #ffb84e;
@@ -335,6 +338,10 @@ line-height: 0.9; */
 .hero-banner-container .beats-solo {
   font-size: 20px;
 }
+.hero-banner-container button:hover {
+  background: #f6a730;
+}
+
 .hero-banner-container button {
   border-radius: 4px;
   padding: 13px 18px;
@@ -505,6 +512,10 @@ line-height: 0.9; */
   align-items: center;
 }
 
+.mx-auto button:hover {
+  background: #f6a730;
+}
+
 .banner-desc button {
   border-radius: 6px;
   padding: 16px 16px;
@@ -567,7 +578,7 @@ line-height: 0.9; */
 .footer-container {
   color: #324d67;
   text-align: center;
-  margin-top: 45px;
+  /* margin-top: 45px; */
   padding: 30px 10px;
   font-weight: 700;
   display: flex;
