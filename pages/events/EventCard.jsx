@@ -1,19 +1,12 @@
 import Link from "next/link";
 import React from "react";
-// import {  } from "../../public/img/lakeview-elegance.png";
 
-export default function BlogCard({ post, className }) {
-  const img = post.metadata.video.split("=")[1]
+export default function EventCard({ post, className }) {
   return (
-    <Link href={`/blog/${post.slug}`}>
+    <Link href={`/event/single`}>
       <article className="card">
         <div className="card__preview">
-          <div
-            className="img"
-            role="img"
-            aria-label={post?.title}
-            style={{ "--background-image": `url(https://i.ytimg.com/vi/${img}/maxresdefault.jpg)` }}
-          ></div>
+          <div className="img" role="img" aria-label={post?.title}></div>
           <div className="card__preview__overlay">
             <svg
               className="opacity-0 group-hover:opacity-[1] transition duration-500 ease-in-out absolute top-0 right-0 bottom-0 left-0 m-auto z-[2] "

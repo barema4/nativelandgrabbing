@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-
+import { posts } from "../lib/helpers/data";
 
 const FooterBanner = () => {
   const banner = {
@@ -29,7 +29,7 @@ const FooterBanner = () => {
           <p>{banner.smallText}</p>
           <h3>{banner.midText}</h3>
           <p>{banner.desc}</p>
-          <Link href={`/product/${banner.product}`}>
+          <Link href={`/blog/${posts[0].slug}`}>
             <button type="button">{banner.buttonText}</button>
           </Link>
         </div>

@@ -15,19 +15,17 @@ const Navbar = () => {
         {nav.map((dt, i) => (
           <div>
             <Link key={i} href={dt.link}>
-            <button className="nav" type="button">
-              {dt.title}
-            </button>
-          </Link>
-
+              <button className="nav" type="button">
+                {dt.title}
+              </button>
+            </Link>
           </div>
-          
         ))}
       </div>
 
       <div className="nav-end">
         {authNav.map((dt, i) => (
-          <Link key={i} href="/product">
+          <Link key={i} href={dt.link}>
             <button className="auth" type="button">
               {dt.title}
             </button>

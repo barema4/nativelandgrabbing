@@ -2,32 +2,39 @@ import React from "react";
 import { VideoCard } from "../../components";
 import BlogList from "./BlogList";
 import { AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
+import { posts } from "../../lib/helpers/data";
 
 const BlogDetails = ({ slug }) => {
-  const bannerData = [];
+  const post = posts.find((dt) => dt.slug === slug);
+  // console.log("post ..", post);
   return (
     <div className="app-wrapper">
-      <VideoCard heroBanner={bannerData.length && bannerData[0]} />
+      <VideoCard postBanner={post} />
       <div className="video-text">
-        <h1>Lakeview Elegance</h1>
+        <h1>{post.title}</h1>
         <p className="icons">
           <AiFillInstagram />
           <AiOutlineTwitter />
         </p>
       </div>
-      <h3>Related Videos</h3>
+      <h3>Related Videos ...</h3>
       <BlogList className="" />
     </div>
   );
 };
 
-export async function getStaticPaths() {
-  // Example static paths
+export const getStaticPaths = async () => {
+  const paths = posts.map((product) => ({
+    params: {
+      slug: product.slug,
+    },
+  }));
+
   return {
-    paths: [{ params: { slug: "single" } }],
-    fallback: false, // Can also be true or 'blocking'
+    paths,
+    fallback: "blocking",
   };
-}
+};
 
 export async function getStaticProps({ params: { slug } }) {
   // Fetch data based on params.id
