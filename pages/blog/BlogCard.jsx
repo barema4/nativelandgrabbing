@@ -3,7 +3,7 @@ import React from "react";
 // import {  } from "../../public/img/lakeview-elegance.png";
 
 export default function BlogCard({ post, className }) {
-  const img = post.metadata.video.split("=")[1]
+  const img = post?.metadata?.video?.split("=")[1]
   return (
     <Link href={`/blog/${post.slug}`}>
       <article className="card">
