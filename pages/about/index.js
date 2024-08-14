@@ -5,7 +5,7 @@ import Link from "next/link";
 const About = () => {
   return (
     <div className="app-wrapper about-page">
-      <h1 className="text-center">About Native LandGrab</h1>
+      <h1 className="text-center">At Native LandGrab</h1>
       <div className="video-banner-container">
         <div className="video-banner__overlay">
           <iframe
@@ -18,7 +18,7 @@ const About = () => {
         </div>
       </div>
       <div className="about-text">
-        <p>
+        <p className="subscribe-text">
           Welcome to Native Landgrab, your dedicated resource for understanding
           and addressing the complex issues surrounding land ownership and
           land-grabbing. Our mission is to provide comprehensive and accessible
@@ -29,7 +29,7 @@ const About = () => {
           of all communities.
         </p>
         <br />
-        <p>
+        <p className="subscribe-text">
           Our platform is designed to serve a diverse audience, including
           indigenous communities, activists, educators, researchers, policy
           makers, NGOs, and the general public. We offer a wide array of
@@ -40,7 +40,7 @@ const About = () => {
           practices.
         </p>
         <br />
-        <p>
+        <p className="subscribe-text">
           At Native Landgrab, we understand that land-grabbing is not just a
           historical issue but a present-day challenge that continues to affect
           millions of people globally. Our commitment is to amplify the voices
@@ -50,7 +50,7 @@ const About = () => {
           promoting sustainable land management practices.
         </p>
         <br />
-        <p>
+        <p className="subscribe-text">
           Join us in our mission to make a difference. Whether you are looking
           to educate yourself and others, advocate for change, or simply stay
           informed about land-related issues, Native Landgrab is here to support
@@ -67,7 +67,7 @@ const About = () => {
       <div className="team-card">
         <div className="card-item">
           <h2>JOIN THE TEAM</h2>
-          <p>
+          <p className="subscribe-text">
             Join the community dedicated to defending and sensitizing people
             about Land Grabbing.
           </p>
@@ -76,12 +76,12 @@ const About = () => {
               <button type="button">JOIN NOW</button>
             </div>
           </Link>
-          <p>By subscribing, you agree with our Terms of Service</p>
+          <p className="subscribe-text">By subscribing, you agree with our Terms of Service</p>
         </div>
         <div className="separator"></div>
         <div className="card-item">
           <ul>
-            <li>
+            <li className="subscribe-text">
               <svg
                 width="24"
                 height="24"
@@ -97,7 +97,7 @@ const About = () => {
               </svg>
               Talk with a professional on Land Law
             </li>
-            <li>
+            <li className="subscribe-text">
               <svg
                 width="24"
                 height="24"
@@ -113,7 +113,7 @@ const About = () => {
               </svg>
               Early access to all shows before public release
             </li>
-            <li>
+            <li className="subscribe-text">
               <svg
                 width="24"
                 height="24"
