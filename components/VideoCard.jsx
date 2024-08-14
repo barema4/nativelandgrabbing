@@ -1,7 +1,7 @@
 import React from "react";
 
 const VideoCard = ({ postBanner }) => {
-  const img = postBanner.metadata.video.split("=")[1];
+  const img = postBanner?.metadata?.video?.split("=")[1];
   return (
     <div className="video-banner-container">
       <div className="video-banner__overlay">
