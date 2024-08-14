@@ -1,6 +1,6 @@
 import React from "react";
 import { VideoCard } from "../../components";
-import EventList from "./EventList";
+// import EventList from "./EventList";
 import { AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
 
 const EventDetails = ({ slug }) => {
@@ -16,7 +16,7 @@ const EventDetails = ({ slug }) => {
         </p>
       </div>
       <h3>Related Videos</h3>
-      <EventList className="" />
+      {/* <EventList className="" /> */}
     </div>
   );
 };
