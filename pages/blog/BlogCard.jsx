@@ -5,7 +5,7 @@ import React from "react";
 export default function BlogCard({ post, className }) {
   const img = post?.metadata?.video?.split("=")[1]
   return (
-    <Link href={`/blog/${post.slug}`}>
+    <Link href={`/blog/${post?.slug}`}>
       <article className="card">
         <div className="card__preview">
           <div
