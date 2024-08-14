@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
         style={{
           height: "6rem",
           padding: "0 1.25rem",
-          backgroundColor: "whitesmoke",
+          backgroundColor: "#ffffff",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",

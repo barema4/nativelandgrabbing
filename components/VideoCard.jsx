@@ -1,15 +1,14 @@
 import React from "react";
 
-const VideoCard = ({ heroBanner }) => {
+const VideoCard = ({ postBanner }) => {
+  const img = postBanner.metadata.video.split("=")[1];
   return (
     <div className="video-banner-container">
-      {/* <div className="video-banner"></div> */}
       <div className="video-banner__overlay">
         <iframe
-          src="https://www.youtube.com/embed/LjmPl5zX1Yc"
-          // title="24/7 LIVE STREAM🔴2 Hours Nonstop Christian Worship Songs ~ Best Hillsong Worship Songs Of All Time"
+          src={`https://www.youtube.com/embed/${img}?autoplay=1`}
           frameborder="0"
-          allow="accelerometer; encrypted-media; gyroscope"
+          allow="autoplay"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
