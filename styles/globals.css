@@ -3,8 +3,10 @@ body,
 * {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   box-sizing: border-box;
 }
 ::-webkit-scrollbar {
@@ -56,7 +58,7 @@ a {
 }
 
 .navbar-container .logo {
-  background-color: #ff8c00;
+  background-color: #ffb84e;
   color: white;
   font-size: 20px;
   font-weight: 700;
@@ -79,13 +81,13 @@ a {
   color: white;
   font-size: 15px;
   font-weight: 500;
-  background: #ff8c00;
+  background: #ffb84e;
   padding: 0.7rem;
 }
 
 /* #db8616 */
 .nav:hover {
-  color: #ff8c00;
+  color: #ffb84e;
 }
 
 /* .auth:hover {
@@ -210,7 +212,8 @@ line-height: 0.9; */
 
 .video-banner-container {
   padding: 100px 40px;
-  margin-top: 60px;
+  margin-top: 20px;
+  margin-bottom: 2.5rem;
   background-color: #dcdcdc;
   border-radius: 0.5rem;
   position: relative;
@@ -329,7 +332,7 @@ line-height: 0.9; */
 .hero-banner-container button {
   border-radius: 4px;
   padding: 13px 18px;
-  background-color: #ff8c00;
+  background-color: #ffb84e;
   color: white;
   border: none;
   margin-top: 80px;
@@ -401,7 +404,7 @@ line-height: 0.9; */
 
 .footer-banner-container {
   padding: 100px 40px;
-  background-color: #ff8c00d9;
+  background-color: #ffb84ed9;
   /* border-radius: 15px; */
   line-height: 1;
   color: whitesmoke;
@@ -439,7 +442,7 @@ line-height: 0.9; */
   height: 44px;
   border-radius: 6px;
   color: white;
-  background-color: #ff8c00;
+  background-color: #ffb84e;
 }
 
 .email-input {
@@ -466,7 +469,7 @@ line-height: 0.9; */
   font-size: 14px;
   color: rgb(67, 67, 67);
   border-style: none;
-  background: #ff8c00;
+  background: #ffb84e;
   width: 30%;
   height: 100%;
   cursor: pointer;
@@ -594,6 +597,10 @@ line-height: 0.9; */
 .about-page p,
 .mission-page p {
   text-align: left;
+}
+.about-page .login {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .mission-page ul,
@@ -1275,7 +1282,7 @@ line-height: 0.9; */
 .my-form {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   position: relative;
   gap: 1rem;
   /* max-width: 30rem; */
@@ -1284,6 +1291,103 @@ line-height: 0.9; */
   padding: 3rem 2rem;
   height: fit-content;
   /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+
+.about-page p {
+  font-size: 18px;
+  margin-top: 0px;
+  line-height: 27px;
+}
+
+.about-page h2 {
+  letter-spacing: 2.8px;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.about-page .team-card {
+  padding: 2.5rem;
+  border-radius: 4px;
+  background: whitesmoke;
+  gap: 10px;
+  display: flex;
+  align-items: stretch;
+  /* align-items: stretch; */
+}
+.about-page .team-card button {
+  display: block;
+  min-width: 100%;
+}
+.team-card .card-item {
+  flex: 1;
+  /* background-color: #ffffff; */
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  box-sizing: border-box;
+}
+.team-card .card-item h2 {
+  letter-spacing: 4px;
+  line-height: 44px;
+  font-size: 47px;
+  font-weight: 800;
+}
+.team-card .card-item p {
+  line-height: 1.5rem;
+  font-style: 1rem;
+}
+
+.team-card .separator {
+  width: 10px; /* Width of the line */
+  background-color: white; /* Color of the line */
+  height: 100%;
+}
+.team-card .btn-div {
+  display: flex;
+  width: 100%;
+}
+.team-card button {
+  flex-grow: 1;
+  background-color: #ffb84e;
+
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  border: 1px solid;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  line-height: 1rem;
+  font-weight: 700;
+  /* height: 44px; */
+  border-radius: 6px;
+  color: white;
+  letter-spacing: 4.8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #ffb84e;
+  /* background-color: #007bff; */
+  /* color: "white";
+  text-align: center;
+  padding: 20px; */
+}
+
+.about-text {
+  padding-left: 90px;
+  padding-right: 90px;
+  /* margin-bottom: 50px; */
+}
+.card-item li {
+  /* font-size: 15px; */
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.25rem;
+  list-style: none;
+  gap: 0.75rem;
+  line-height: 2rem;
+}
+
+.card-item li svg {
+  color: #ffb84e;
 }
 
 .form-welcome {

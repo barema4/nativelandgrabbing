@@ -4,8 +4,8 @@ const InsideForm = () => {
   return (
     <div className="login-fields">
       <h1>SIGN IN</h1>
-      <form class="my-form">
-        <div class="text-field">
+      <form className="my-form">
+        <div className="text-field">
           <label for="email">
             Email:
             <input
@@ -33,7 +33,7 @@ const InsideForm = () => {
             </svg>
           </label>
         </div>
-        <div class="text-field">
+        <div className="text-field">
           <label for="password">
             Password:
             <input
@@ -64,10 +64,10 @@ const InsideForm = () => {
             </svg>
           </label>
         </div>
-        <button type="submit" class="my-form__button">
+        <button type="submit" className="my-form__button">
           Login
         </button>
-        <div class="my-form__actions">
+        <div className="my-form__actions">
           <a href="#" title="Reset Password">
             Reset Password
           </a>
