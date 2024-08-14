@@ -68,6 +68,12 @@ a {
   margin-right: 0.5rem;
 }
 
+.img-logo {
+  background-image: url("../public/img/logo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .navbar-container .nav {
   background-color: transparent;
   color: #324d67;
