@@ -1,19 +1,3 @@
-:root {
-  --primary: #111926;
-  --white: #fff;
-  --background: #f8f8ff;
-  --gray: #d3d3d3;
-  --text: #262626;
-  --like: #ff3040;
-  --btn-pink: #ff8c00d9;
-
-  --medium-body-font: font-family: "Charter", Georgia, Cambria, "Times New Roman", Times, serif;
-  --medium-ui-font: font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --medium-bd-font-size: 21px;
-  --medium-bd-line-height: 1.58;
-  --medium-bd-color: #1a1a1a;
-}
-
 html,
 body,
 * {
@@ -40,6 +24,7 @@ a {
 }
 
 .layout {
+  /* Added */
   /* padding: 10px; */
 }
 
@@ -48,6 +33,8 @@ a {
   justify-content: center;
   align-items: center;
   gap: 25rem;
+  /* Removed */
+  background-color: #ffffff;
 }
 
 .nav-start {
@@ -72,7 +59,8 @@ a {
 }
 
 .navbar-container .logo {
-  background-color: var(--btn-pink);
+  /* Changed: background-color: #ff8c00; */
+  background-color: #ffb84e;
   color: white;
   font-size: 20px;
   font-weight: 700;
@@ -80,6 +68,13 @@ a {
   border-radius: 3rem;
   letter-spacing: 0.2rem;
   margin-right: 0.5rem;
+}
+
+/* Deleted */
+.img-logo {
+  background-image: url("../public/img/logo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .navbar-container .nav {
@@ -95,13 +90,19 @@ a {
   color: white;
   font-size: 15px;
   font-weight: 500;
-  background: var(--btn-pink);
+  /* Changed: background: #ff8c00; */
+  background: #ffb84e;
   padding: 0.7rem;
 }
 
+/* Deleted */
+.navbar-container .auth:hover {
+  background: #f1ca91;
+}
 /* #db8616 */
 .nav:hover {
-  color: var(--btn-pink);
+  /* Changed: color: #ff8c00; */
+  color: #ffb84e;
 }
 
 /* .auth:hover {
@@ -207,15 +208,31 @@ span.text-red {
   color: black;
 }
 
+/* Deleted */
+/* padding: 100px 40px;
+margin-top: 60px;
+background-color: #dcdcdc;
+border-radius: 0.5rem;
+position: relative;
+height: 500px;
+line-height: 0.9; */
+
 .app-wrapper {
-  width: 72%;
+  /* Changed: background: #ff8c00; */
+  width: 70%;
+  /* Added */
+  max-width: 1057px;
+  /* padding-left: 10px;
+  padding-right: 10px; */
   margin-left: auto;
   margin-right: auto;
 }
 
 .video-banner-container {
   padding: 100px 40px;
+  /* Changed: background: #ff8c00; */
   margin-top: 20px;
+    /* Removed */
   margin-bottom: 2.5rem;
   background-color: #dcdcdc;
   border-radius: 0.5rem;
@@ -261,13 +278,91 @@ span.text-red {
   padding-bottom: 20%;
 }
 
+/* Deleted */
+/* start */
+
+.ticket-banner-container {
+  display: none;
+  /* padding: 100px 40px; */
+  margin-top: 60px;
+  background-color: #dcdcdc;
+  border-radius: 0.5rem;
+  position: relative;
+  height: 100px;
+  /* width: 100%; */
+  line-height: 0.9;
+}
+
+.ticket-banner-cover {
+  background-image: url("../public/img/TicketBanner.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* padding-bottom: 20%; */
+  /* height: 100%;
+  width: 100%; */
+}
+
+.events-banner-container {
+  /* padding: 100px 40px; */
+  margin-top: 60px;
+  background-color: #dcdcdc;
+  border-radius: 0.5rem;
+  position: relative;
+  /* overflow: hidden; */
+  height: 500px;
+  width: 100%;
+  line-height: 0.9;
+}
+
+.login-banner-container {
+  background-color: #f7f4ef;
+  /* padding-top: 2rem; */
+  padding-top: 3rem;
+  height: auto;
+  width: 100%;
+}
+
+.login-card {
+  /* margin-top: 2px; */
+  max-width: 670px;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-card h1 {
+  /* margin-top: 2rem; */
+  text-align: center;
+  /* margin-bottom: 2rem; */
+}
+.text-field input {
+  border: 2px solid black;
+  border-width: 2px;
+  border-style: inset;
+  border-color: rgb(40, 40, 40, 0.1);
+
+  border: 1px solid #1d1d1d;
+}
+
+.login-fields {
+  padding: 50px;
+}
+/* end */
+
 .hero-banner-container .beats-solo {
   font-size: 20px;
 }
+/* Deleted */
+.hero-banner-container button:hover {
+  background: #f6a730;
+}
+
 .hero-banner-container button {
   border-radius: 4px;
   padding: 13px 18px;
-  background-color: var(--btn-pink);
+  /* Changed: background: #ff8c00; */
+  background-color: #ffb84e;
   color: white;
   border: none;
   margin-top: 80px;
@@ -339,15 +434,32 @@ span.text-red {
 
 .footer-banner-container {
   padding: 100px 40px;
-  background-color: #ff8c00d9;
-  border-radius: 15px;
+  /* Changed: background-color: #ff8c00; */
+  background-color: #ffb84e;
+  /* Commented */
+  /* border-radius: 15px; */
   line-height: 1;
   color: whitesmoke;
   width: 100%;
-  margin-top: 42px;
+  /* Changed: margin-top: 42px; */
+  margin-top: 40px;
+}
+/* Deleted */
+.app-banner-container {
+  /* padding: 100px 40px; */
+  /* margin-top: 60px; */
+  background-color: #dcdcdc;
+  /* border-radius: 0.5rem; */
+  position: relative;
+  /* overflow: hidden; */
+  height: 500px;
+  width: 100%;
+  line-height: 0.9;
 }
 
 .banner-desc {
+  /* Added */
+  /* 1px solid var(--secondary) */
   display: flex;
   justify-content: space-between;
 }
@@ -364,7 +476,8 @@ span.text-red {
   height: 44px;
   border-radius: 6px;
   color: white;
-  background-color: var(--btn-pink);
+  /* Changed: margin-top: 40px; */
+  background-color: #ffb84e;
 }
 
 .email-input {
@@ -391,7 +504,8 @@ span.text-red {
   font-size: 14px;
   color: rgb(67, 67, 67);
   border-style: none;
-  background: var(--btn-pink);
+  /* Changed: background: #ff8c00; */
+  background: #ffb84e;
   width: 30%;
   height: 100%;
   cursor: pointer;
@@ -419,6 +533,10 @@ span.text-red {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/* Deleted */
+.mx-auto button:hover {
+  background: #f6a730;
 }
 
 .banner-desc button {
@@ -483,7 +601,8 @@ span.text-red {
 .footer-container {
   color: #324d67;
   text-align: center;
-  margin-top: 45px;
+  /* Added */
+  /* margin-top: 45px; */
   padding: 30px 10px;
   font-weight: 700;
   display: flex;
@@ -520,35 +639,10 @@ span.text-red {
 .mission-page p {
   text-align: left;
 }
+/* Deleted */
 .about-page .login {
   margin-top: 50px;
   margin-bottom: 50px;
-}
-
-.about-page p {
-  font-size: 18px;
-  margin-top: 0px;
-  line-height: 27px;
-}
-
-.about-page h2 {
-  letter-spacing: 2.8px;
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-.about-page .team-card {
-  padding: 2.5rem;
-  border-radius: 4px;
-  background: whitesmoke;
-  gap: 10px;
-  display: flex;
-  align-items: stretch;
-  /* align-items: stretch; */
-}
-.about-page .team-card button {
-  display: block;
-  min-width: 100%;
 }
 
 .mission-page ul,
@@ -1050,6 +1144,15 @@ span.text-red {
   }
 }
 
+:root {
+  --primary: #111926;
+  --white: #fff;
+  --background: #f8f8ff;
+  --gray: #d3d3d3;
+  --text: #262626;
+  --like: #ff3040;
+}
+
 .card {
   background-color: rgb(247 244 239);
   display: flex;
@@ -1069,9 +1172,12 @@ span.text-red {
   overflow: hidden;
   margin-bottom: 1.25rem;
 }
+/* Deleted */
+/* ../public/img/lakeview-elegance.png */
 
 .card__preview .img {
-  background-image: url("../public/img/lakeview-elegance.png");
+  background-image: var(--background-image);
+  /* background-image: url("../public/img/lakeview-elegance.png"); */
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -1285,6 +1391,7 @@ span.text-red {
 }
 .team-card button {
   flex-grow: 1;
+  background-color: #ffb84e;
 
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -1301,7 +1408,7 @@ span.text-red {
   letter-spacing: 4.8px;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: var(--btn-pink);
+  background-color: #ffb84e;
   /* background-color: #007bff; */
   /* color: "white";
   text-align: center;
@@ -1324,7 +1431,7 @@ span.text-red {
 }
 
 .card-item li svg {
-  color: var(--btn-pink);
+  color: #ffb84e;
 }
 
 .form-welcome {

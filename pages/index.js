@@ -33,7 +33,9 @@ const Home = () => (
       ))}
     </div>
 
-    <FooterBanner footerBanner={bannerData && bannerData[0]} />
+    <div className="app-wrapper">
+      <FooterBanner footerBanner={bannerData && bannerData[0]} />
+    </div>
   </div>
 );
 
