@@ -37,10 +37,10 @@ export default function BlogCard({ post, className }) {
                   width="68"
                   height="74"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
                   <feFlood
-                    flood-opacity="0"
+                    floodOpacity="0"
                     result="BackgroundImageFix"
                   ></feFlood>
                   <feColorMatrix

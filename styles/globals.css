@@ -6,6 +6,7 @@
   --text: #262626;
   --like: #ff3040;
   --btn-pink: #ff8c00d9;
+  --banner-color: #ebebeb;
   --separator-color: #e8e7e2;
 
   /* --medium-body-font: font-family: "Charter", Georgia, Cambria, "Times New Roman", Times, serif;
@@ -24,6 +25,7 @@ body,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   box-sizing: border-box;
 }
+
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -32,6 +34,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 button {
   border: none;
 }
@@ -43,9 +46,9 @@ button {
   width: 100%;
 }
 
-.layout {
-  /* padding: 10px; */
-}
+/* .layout {
+  padding: 10px;
+} */
 
 .navbar-container {
   display: flex;
@@ -119,6 +122,7 @@ button {
   margin: 60px 0px;
   color: #f02d34;
 }
+
 .marquee {
   position: relative;
   height: 400px;
@@ -133,13 +137,16 @@ button {
   animation: marquee 15s linear infinite;
   width: 180%;
 }
+
 .track:hover {
   animation-play-state: paused;
 }
+
 @keyframes marquee {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
@@ -159,9 +166,11 @@ span.text-red {
   border: none;
   background-color: transparent;
 }
+
 .cart-icon:hover {
   transform: scale(1.1, 1.1);
 }
+
 .cart-item-qty {
   position: absolute;
   right: -8px;
@@ -174,6 +183,7 @@ span.text-red {
   text-align: center;
   font-weight: 600;
 }
+
 .products-container {
   display: flex;
   flex-wrap: wrap;
@@ -182,6 +192,7 @@ span.text-red {
   margin-top: 20px;
   width: 100%;
 }
+
 .product-card {
   cursor: pointer;
   transform: scale(1, 1);
@@ -191,12 +202,14 @@ span.text-red {
 
   color: #324d67;
 }
+
 .product-card:hover {
   transform: scale(1.1, 1.1);
 }
+
 .product-image {
   border-radius: 15px;
-  background-color: #ebebeb;
+  background-color: var(--banner-color);
   transform: scale(1, 1);
   transition: transform 0.5s ease;
 }
@@ -204,6 +217,7 @@ span.text-red {
 .product-name {
   font-weight: 500;
 }
+
 .product-price {
   font-weight: 800;
   margin-top: 6px;
@@ -246,7 +260,6 @@ span.text-red {
 .hero-banner-container {
   padding: 100px 40px;
   margin-top: 60px;
-  background-color: #dcdcdc;
   border-radius: 0.5rem;
   position: relative;
   height: 500px;
@@ -307,38 +320,46 @@ span.text-red {
   text-align: center;
   color: var(--white);
 }
+
 .time-line-body {
   margin-left: auto;
   margin-right: auto;
   width: 72vw;
 }
+
 .time-line-body .item {
   display: flex;
   width: 100%;
   display: flex;
   align-items: center;
 }
+
 .time-line-body .item .date {
   width: 130px;
   text-align: center;
 }
+
 .time-line-body .item .time-line-btn {
   width: 150px;
   text-align: center;
 }
+
 .time-line-body .item .details {
   width: calc(72vw - 240px);
   text-align: center;
 }
+
 .time-line-body .item .date .month {
   font-size: 1rem;
   width: 55px;
 }
+
 .time-line-body .item .date .number {
   font-size: 42px;
   font-weight: 800;
   width: 55px;
 }
+
 .time-line-body button {
   border-radius: 4px;
   font-size: .875rem;
@@ -352,18 +373,22 @@ span.text-red {
   padding-bottom: 1rem;
   border: none;
 }
+
 .item .details .words {
   text-align: left;
 }
+
 .item .details .words .main-text {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 700;
 }
+
 .item .details .words .sub-text {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+
 .line-container {
   position: relative;
   width: 100%;
@@ -371,6 +396,7 @@ span.text-red {
   background-color: #ddd;
   overflow: hidden;
 }
+
 .line {
   position: absolute;
   top: 0;
@@ -387,9 +413,17 @@ span.text-red {
   padding-bottom: 20%;
 }
 
+/* .banner-cover {
+  background-image: url("../public/img/Ticket2Banner.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 20%;
+} */
+
 .hero-banner-container .beats-solo {
   font-size: 20px;
 }
+
 .hero-banner-container button {
   border-radius: 4px;
   padding: 13px 18px;
@@ -407,12 +441,14 @@ span.text-red {
   font-size: 4rem;
   margin-top: 4px;
 }
+
 .hero-banner-container h1 {
   color: var(--white);
   font-size: 10em;
   margin-left: -20px;
   text-transform: uppercase;
 }
+
 .hero-banner-image {
   position: absolute;
   top: 0%;
@@ -445,12 +481,14 @@ span.text-red {
   font-weight: 100;
   text-align: end;
 }
+
 .desc h5 {
   margin-bottom: 12px;
   font-weight: 800;
   font-size: 56px;
   align-self: flex-end;
 }
+
 .products-heading {
   margin: 40px 0;
 }
@@ -472,6 +510,159 @@ span.text-red {
   margin-top: 42px;
 }
 
+.ticket-banner-cover {
+  padding: 100px 40px;
+  background-image: url("../public/img/Ticket2Banner.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+  width: 100%;
+  margin-top: 42px;
+}
+
+.conferences-banner-cover {
+  width: 100%;
+  margin-top: 84px;
+  /* margin-bottom: 84px; */
+
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+
+  display: flex;
+  position: relative;
+}
+
+.conferences-banner-cover button {
+  margin-top: 10px;
+}
+
+.conferences-banner-left {
+  padding-bottom: 250px;
+  padding-top: 250px;
+  flex: 1;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+.conferences-banner-right {
+  padding-bottom: 250px;
+  padding-top: 250px;
+  flex: 1;
+  background-image: url("../public/img/Interviews.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+  z-index: 0;
+}
+
+.conferences-banner-center {
+  position: absolute;
+  width: 500px;
+  /* text-align: center; */
+  color: white;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  /* Ensures it's above the child elements */
+  /* background: rgba(255, 255, 255, 0.8); */
+  /* Optional: a slight background to make the text more readable */
+  padding: 20px;
+  /* Optional: for some internal padding */
+}
+
+.conferences-banner-center h1 {
+  text-transform: uppercase;
+}
+
+/* InterBanner */
+
+.inter-banner-cover {
+  width: 100%;
+
+  /* background-color: #f8dede; */
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+
+  display: flex;
+  position: relative;
+}
+
+.inter-banner-cover button {
+  margin-top: 10px;
+}
+
+.inter-banner-left {
+  padding-bottom: 250px;
+  padding-top: 250px;
+  flex: 1;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+.inter-banner-right {
+  padding-bottom: 250px;
+  padding-top: 250px;
+  flex: 1;
+  background-image: url("../public/img/Interviews.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+  z-index: 0;
+}
+
+.inter-banner-center {
+  position: absolute;
+  width: 500px;
+  /* text-align: center; */
+  color: white;
+  transform: translate(-120%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  /* Ensures it's above the child elements */
+  /* background: rgba(255, 255, 255, 0.8); */
+  /* Optional: a slight background to make the text more readable */
+  padding: 20px;
+  /* Optional: for some internal padding */
+}
+
+.inter-banner-center h1 {
+  text-transform: uppercase;
+}
+
+.inter-banner-cards {
+  position: absolute;
+  width: 1000px;
+  /* text-align: center; */
+  /* color: red; */
+  transform: translate(-50%, -50%);
+  top: 80%;
+  left: 80%;
+  z-index: 4;
+  /* Ensures it's above the child elements */
+  /* background: rgba(255, 255, 255, 0.8); */
+  /* Optional: a slight background to make the text more readable */
+  padding: 20px;
+  /* Optional: for some internal padding */
+}
+
+.inter-banner-content {
+  height: 100%;
+  width: 100%;
+  color: red;
+}
+
 .banner-desc {
   display: flex;
   justify-content: space-between;
@@ -479,7 +670,7 @@ span.text-red {
 
 .submit-btn button {
   padding: 0 14px;
-  border: 1px solid;
+  /* border: 1px solid; */
   cursor: pointer;
   text-transform: uppercase;
   font-size: 15px;
@@ -508,6 +699,99 @@ span.text-red {
   color: #999999;
   width: 100%;
   height: 38px;
+}
+
+.interviews-banner-cover h1 {
+  color: black;
+}
+
+.interviews-banner-cover {
+  width: 100%;
+  margin-top: 84px;
+  background-color: #f8dede;
+
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+
+  display: flex;
+  position: relative;
+}
+
+.interviews-banner-cover .wrapper {
+  width: 72%;
+  background-color: greenyellow;
+  height: 100%;
+  /* margin-top: auto;
+  margin-bottom: auto; */
+  /* position: relative; */
+}
+
+.interviews-banner-cover .wrapper-content {
+  /* background-color: green; */
+  width: 35%;
+  /* margin-bottom: 60px; */
+  /* height: 100%; */
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.interviews-banner-cover button {
+  margin-top: 10px;
+}
+
+/* .interviews-banner-left::after {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  height: 100%;
+  width: 50px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  pointer-events: none;
+  z-index: 1;
+} */
+
+.interviews-banner-left {
+  padding-bottom: 250px;
+  padding-top: 250px;
+  flex: 1;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+.interviews-banner-right {
+  padding-bottom: 250px;
+  padding-top: 250px;
+  flex: 1;
+  background-image: url("../public/img/Interviews.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+  z-index: 0;
+}
+
+.interviews-banner-center {
+  position: absolute;
+  width: 500px;
+  /* text-align: center; */
+  color: white;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  /* Ensures it's above the child elements */
+  /* background: rgba(255, 255, 255, 0.8); */
+  /* Optional: a slight background to make the text more readable */
+  padding: 20px;
+  /* Optional: for some internal padding */
+}
+
+.interviews-banner-center h1 {
+  text-transform: uppercase;
 }
 
 .subscribe {
@@ -557,33 +841,41 @@ span.text-red {
   font-weight: 500;
   cursor: pointer;
 }
+
 .banner-desc .left h3 {
   font-weight: 900;
   font-size: 60px;
   margin-left: 25px;
 }
+
 .banner-desc .left p {
   margin: 18px;
 }
+
 .footer-banner-image {
   position: absolute;
   top: -25%;
   left: 25%;
 }
+
 .banner-desc .right {
   line-height: 1.4;
 }
+
 .banner-desc .right h3 {
   font-weight: 800;
   font-size: 60px;
 }
+
 .banner-desc .right p {
   font-size: 18px;
 }
+
 .banner-desc .right .company-desc {
   font-size: 14px;
   font-weight: 300;
 }
+
 .cart-wrapper {
   width: 100vw;
   background: rgba(0, 0, 0, 0.5);
@@ -593,6 +885,7 @@ span.text-red {
   z-index: 100;
   transition: all 1s ease-in-out;
 }
+
 .cart-container {
   height: 100vh;
   width: 600px;
@@ -615,20 +908,24 @@ span.text-red {
   justify-content: center;
   background-color: whitesmoke;
 }
+
 .footer-container .icons {
   font-size: 30px;
   display: flex;
   gap: 10px;
 }
+
 .video-text {
   color: #324d67;
   margin-bottom: 30px;
 }
+
 .video-text .icons {
   font-size: 25px;
   display: flex;
   gap: 10px;
 }
+
 .about-page h1,
 .mission-page h1 {
   text-align: left;
@@ -637,14 +934,17 @@ span.text-red {
   padding: 10px 0px;
   margin-top: 13px;
 }
+
 .about-page h2,
 .mission-page h2 {
   text-align: left;
 }
+
 .about-page p,
 .mission-page p {
   text-align: left;
 }
+
 .about-page .login {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -662,6 +962,7 @@ span.text-red {
   font-weight: 600;
   margin-bottom: 1rem;
 }
+
 .about-page .team-card {
   padding: 2.5rem;
   border-radius: 4px;
@@ -670,6 +971,7 @@ span.text-red {
   display: flex;
   align-items: stretch;
 }
+
 .about-page .team-card button {
   display: block;
   min-width: 100%;
@@ -702,63 +1004,74 @@ span.text-red {
 .cart-heading .heading {
   margin-left: 10px;
 }
+
 .cart-num-items {
   margin-left: 10px;
   color: #f02d34;
 }
+
 .empty-cart {
   margin: 40px;
   text-align: center;
 }
+
 .empty-cart h3 {
   font-weight: 600;
   font-size: 20px;
 }
+
 .cancel {
   cursor: pointer;
 }
+
 .product-container {
   margin-top: 15px;
   overflow: auto;
   max-height: 70vh;
   padding: 20px 10px;
 }
+
 .product {
   display: flex;
   gap: 30px;
   padding: 20px;
 }
+
 .product .cart-product-image {
   width: 180px;
   height: 150px;
   border-radius: 15px;
-  background-color: #ebebeb;
+  background-color: var(--banner-color);
 }
+
 .item-desc .flex {
   display: flex;
   justify-content: space-between;
   width: 350px;
   color: #324d67;
-  color: #324d67;
-
-  color: #324d67;
 }
+
 .item-desc .bottom {
   margin-top: 60px;
 }
+
 .flex h5 {
   font-size: 24px;
 }
+
 .flex h4 {
   font-size: 20px;
 }
+
 .total {
   display: flex;
   justify-content: space-between;
 }
+
 .total h3 {
   font-size: 22px;
 }
+
 .remove-item {
   font-size: 24px;
   color: #f02d34;
@@ -766,6 +1079,7 @@ span.text-red {
   background: transparent;
   border: none;
 }
+
 .cart-bottom {
   position: absolute;
   bottom: 12px;
@@ -795,9 +1109,11 @@ span.text-red {
   transform: scale(1, 1);
   transition: transform 0.5s ease;
 }
+
 .btn:hover {
   transform: scale(1.1, 1.1);
 }
+
 .product-detail-container {
   display: flex;
   gap: 40px;
@@ -808,24 +1124,27 @@ span.text-red {
 
 .product-detail-image {
   border-radius: 15px;
-  background-color: #ebebeb;
+  background-color: var(--banner-color);
 
   width: 400px;
   height: 400px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
+
 .product-detail-image:hover {
   background-color: #f02d34;
 }
+
 .small-images-container {
   display: flex;
   gap: 10px;
   margin-top: 20px;
 }
+
 .small-image {
   border-radius: 8px;
-  background-color: #ebebeb;
+  background-color: var(--banner-color);
   width: 70px;
   height: 70px;
   cursor: pointer;
@@ -834,6 +1153,7 @@ span.text-red {
 .selected-image {
   background-color: #f02d34;
 }
+
 .reviews {
   color: #f02d34;
   margin-top: 10px;
@@ -845,35 +1165,42 @@ span.text-red {
 .product-detail-desc h4 {
   margin-top: 10px;
 }
+
 .product-detail-desc p {
   margin-top: 10px;
 }
+
 .reviews p {
   color: #324d67;
   margin-top: 0px;
 }
+
 .product-detail-desc .price {
   font-weight: 700;
   font-size: 26px;
   margin-top: 30px;
   color: #f02d34;
 }
+
 .price .old-price,
 .product-price .old-price,
 .price .old-price {
   color: gray;
   text-decoration: line-through;
 }
+
 .product-detail-desc .quantity {
   display: flex;
   gap: 20px;
   margin-top: 10px;
   align-items: center;
 }
+
 .product-detail-desc .buttons {
   display: flex;
   gap: 30px;
 }
+
 .buttons .add-to-cart {
   padding: 10px 20px;
   border: 1px solid #f02d34;
@@ -887,9 +1214,11 @@ span.text-red {
   transform: scale(1, 1);
   transition: transform 0.5s ease;
 }
+
 .buttons .add-to-cart:hover {
   transform: scale(1.1, 1.1);
 }
+
 .buttons .buy-now {
   width: 200px;
 
@@ -904,26 +1233,32 @@ span.text-red {
   transform: scale(1, 1);
   transition: transform 0.5s ease;
 }
+
 .buttons .buy-now:hover {
   transform: scale(1.1, 1.1);
 }
+
 .quantity-desc {
   border: 1px solid gray;
   padding: 6px;
 }
+
 .quantity-desc span {
   font-size: 16px;
   padding: 6px 12px;
   cursor: pointer;
 }
+
 .quantity-desc .minus {
   border-right: 1px solid gray;
   color: #f02d34;
 }
+
 .quantity-desc .num {
   border-right: 1px solid gray;
   font-size: 20px;
 }
+
 .quantity-desc .plus {
   color: rgb(49, 168, 49);
 }
@@ -931,6 +1266,7 @@ span.text-red {
 .maylike-products-wrapper {
   margin-top: 120px;
 }
+
 .maylike-products-wrapper h2 {
   text-align: center;
   margin: 50px;
@@ -938,21 +1274,25 @@ span.text-red {
 
   font-size: 28px;
 }
+
 .maylike-products-container {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin-top: 20px;
 }
+
 .max-qty {
   font-weight: 500;
   color: #f02d34;
 }
+
 .success-wrapper,
 .cancel-wrapper {
   background-color: var(--white);
   min-height: 60vh;
 }
+
 .success,
 .cancel {
   width: 1000px;
@@ -971,6 +1311,7 @@ span.text-red {
   color: green;
   font-size: 40px;
 }
+
 .success h2 {
   text-transform: capitalize;
   margin-top: 15px 0px;
@@ -978,15 +1319,18 @@ span.text-red {
   font-size: 40px;
   color: #324d67;
 }
+
 .success .email-msg {
   font-size: 16px;
   font-weight: 600;
   text-align: center;
 }
+
 .cancel p {
   font-size: 20px;
   font-weight: 600;
 }
+
 .success .description {
   font-size: 16px;
   font-weight: 600;
@@ -994,10 +1338,12 @@ span.text-red {
   margin: 10px;
   margin-top: 30px;
 }
+
 .success .description .email {
   margin-left: 5px;
   color: #f02d34;
 }
+
 .product-max-qty {
   margin-top: 10px;
 }
@@ -1033,92 +1379,117 @@ span.text-red {
   .hide {
     display: none;
   }
+
   .hero-banner-container {
     height: 560px;
   }
+
   .hero-banner-image {
     width: 77%;
     height: 62%;
     top: -2%;
     right: -6%;
   }
+
   .footer-banner-container {
     height: 560px;
     margin-top: 80px;
   }
+
   .footer-banner-image {
     width: 77%;
     left: 30%;
     top: 6%;
     height: 56%;
   }
+
   .banner-desc .left h3 {
     font-weight: 900;
     font-size: 50px;
     margin-left: 5px;
   }
+
   .banner-desc .left p {
     margin: 18px;
   }
+
   .banner-desc .right h3 {
     font-size: 45px;
   }
+
   .banner-desc .right p {
     font-size: 18px;
   }
+
   .banner-desc .right .company-desc {
     font-size: 14px;
   }
+
   .banner-desc {
     flex-wrap: wrap;
     gap: 20px;
   }
+
   .hero-banner-container {
     line-height: 1.3;
   }
+
   .hero-banner-container h1 {
     font-size: 50px;
   }
+
   .hero-banner-container h3 {
     font-size: 40px;
   }
+
   .hero-banner-container button {
     margin-top: 90px;
     z-index: 10000;
   }
+
   .desc {
     bottom: 60px;
   }
+
   .product-detail-container {
     flex-wrap: wrap;
   }
+
   .product-detail-container .product-detail-image {
     width: 350px;
     height: 350px;
   }
+
   .cart-container {
     width: 415px;
     padding: 4px;
   }
+
   .cart-heading {
     margin-top: 35px;
   }
+
   .product-container {
     margin-top: 10px;
   }
+
   .product {
     padding: 20px 5px;
   }
+
   .product .cart-product-image {
     width: 25%;
     height: 25%;
   }
+
   .buttons .add-to-cart {
     width: 150px;
   }
+
   .buttons .buy-now {
     width: 150px;
   }
+
   .product-detail-container {
     margin: 20px;
   }
@@ -1126,21 +1497,26 @@ span.text-red {
   .item-desc .flex {
     width: 200px;
   }
+
   .top {
     flex-wrap: wrap;
     gap: 10px;
   }
+
   .item-desc .bottom {
     margin-top: 30px;
   }
+
   .flex h5 {
     font-size: 16px;
     color: #324d67;
   }
+
   .flex h4 {
     font-size: 16px;
     color: black;
   }
+
   .cart-bottom {
     padding: 30px;
   }
@@ -1148,26 +1524,32 @@ span.text-red {
   .total h3 {
     font-size: 20px;
   }
+
   .track {
     animation: marquee 10s linear infinite;
     width: 550%;
   }
+
   .success-wrapper,
   .cancel-wrapper {
     min-height: 69vh;
   }
+
   .success,
   .cancel {
     width: 370px;
     margin-top: 100px;
     padding: 20px;
   }
+
   .success {
     height: 350px;
   }
+
   .success h2 {
     font-size: 17px;
   }
+
   .btn-container {
     width: 300px;
     margin: auto;
@@ -1206,6 +1588,19 @@ span.text-red {
   transition-duration: 0.2s;
 }
 
+.interview-img {
+  margin-top: 30px;
+  /* background-image: url("../public/img/lakeview-elegance.png"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  display: flex;
+  justify-content: space-between;
+}
+
 .card__preview__overlay {
   position: absolute;
   top: 0;
@@ -1219,6 +1614,7 @@ span.text-red {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
+
 .card:hover .card__preview__overlay {
   opacity: 1;
 }
@@ -1230,6 +1626,7 @@ span.text-red {
 .preview__text {
   padding: 1rem;
 }
+
 .preview__text h3 {
   line-height: 22.556px;
   color: #282828;
@@ -1268,11 +1665,13 @@ span.text-red {
   left: 1.25rem;
   font-weight: bold;
 }
+
 .card__price svg {
   width: 14px;
   height: 13px;
   display: block;
 }
+
 .card__time {
   color: var(--white);
   font-size: 11px;
@@ -1354,6 +1753,7 @@ span.text-red {
   font-weight: 600;
   margin-bottom: 1rem;
 }
+
 .about-page .team-card {
   padding: 2.5rem;
   border-radius: 4px;
@@ -1363,10 +1763,12 @@ span.text-red {
   align-items: stretch;
   /* align-items: stretch; */
 }
+
 .about-page .team-card button {
   display: block;
   min-width: 100%;
 }
+
 .team-card .card-item {
   flex: 1;
   /* background-color: #ffffff; */
@@ -1374,26 +1776,32 @@ span.text-red {
   /* border: 1px solid #ccc; */
   box-sizing: border-box;
 }
+
 .team-card .card-item h2 {
   letter-spacing: 4px;
   line-height: 44px;
   font-size: 47px;
   font-weight: 800;
 }
+
 .team-card .card-item p {
   line-height: 1.5rem;
   font-style: 1rem;
 }
 
 .team-card .separator {
-  width: 10px; /* Width of the line */
-  background-color: var(--white); /* Color of the line */
+  width: 10px;
+  /* Width of the line */
+  background-color: var(--white);
+  /* Color of the line */
   height: 100%;
 }
+
 .team-card .btn-div {
   display: flex;
   width: 100%;
 }
+
 .team-card button {
   flex-grow: 1;
 
@@ -1422,14 +1830,14 @@ span.text-red {
 .about-text {
   padding-left: 90px;
   padding-right: 90px;
-    font-family: "Inter", serif;
-    font-weight: normal;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-    text-align: center;
-    font-size: 18px;
-    color: #324d67;
+  font-family: "Inter", serif;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+  text-align: center;
+  font-size: 18px;
+  color: #324d67;
 }
 
 .card-item li {
@@ -1578,7 +1986,7 @@ span.text-red {
   border: 1px solid var(--primary);
 }
 
-.text-field input:focus + svg {
+.text-field input:focus+svg {
   stroke: var(--primary);
 }
 

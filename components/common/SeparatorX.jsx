@@ -2,8 +2,8 @@ import React from "react";
 
 const SeparatorX = () => {
   return (
-    <div class="line-container">
-      <div class="line"></div>
+    <div className="line-container">
+      <div className="line"></div>
     </div>
   );
 };

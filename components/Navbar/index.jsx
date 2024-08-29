@@ -13,8 +13,8 @@ const Navbar = () => {
         </Link>
 
         {nav.map((dt, i) => (
-          <div>
-            <Link key={i} href={dt.link}>
+          <div key={i}>
+            <Link href={dt.link}>
               <button className="nav" type="button">
                 {dt.title}
               </button>

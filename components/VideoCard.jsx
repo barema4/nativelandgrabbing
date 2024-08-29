@@ -10,7 +10,7 @@ const VideoCard = ({ postBanner }) => {
           frameborder="0"
           allow="autoplay"
           referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
     </div>
