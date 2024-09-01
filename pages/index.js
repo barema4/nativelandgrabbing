@@ -27,8 +27,8 @@ const Home = () => (
       <TrendingBanner />
       <SponsorsContainer />
       <CommunityTalks />
-      <Accordion />
       <TeamCard />
+      <Accordion />
     </div>
 
     {/* <InterBanner /> */}
