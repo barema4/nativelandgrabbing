@@ -49,7 +49,7 @@ const Footer = () => {
             lineHeight: "2rem",
           }}
         >
-          <h3>Community</h3>
+          <h3>COMMUNITY</h3>
           <ul style={{ listStyle: "none" }}>
             <li>
               <a href="#link1">Help Center</a>

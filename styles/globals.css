@@ -1,11 +1,16 @@
+/* @import url('./faqs.css'); */
+@import url('./accordion.css');
+
 :root {
   --primary: #111926;
   --white: #fff;
   --background: #f8f8ff;
-  --gray: #d3d3d3;
+  --gray-border: #d3d3d3;
   --text: #262626;
   --like: #ff3040;
   --btn-pink: #ff8c00d9;
+  --btn-green: #009900;
+  --btn-dark-green: #003300;
   --banner-color: #ebebeb;
   --separator-color: #e8e7e2;
 
@@ -21,8 +26,7 @@ body,
 * {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Charter", Georgia, Cambria, "Times New Roman", Times, serif;
   box-sizing: border-box;
 }
 
@@ -78,11 +82,12 @@ button {
 }
 
 .navbar-container .logo {
-  background-color: var(--btn-pink);
+  background-color: var(--btn-green);
   color: var(--white);
   font-size: 20px;
   font-weight: 700;
-  padding: 0.7rem;
+  /* padding: 0.7rem; */
+  padding: 0.5rem 1.25rem;
   border-radius: 3rem;
   letter-spacing: 0.2rem;
   margin-right: 0.5rem;
@@ -90,24 +95,24 @@ button {
 
 .navbar-container .nav {
   background-color: transparent;
-  color: #324d67;
+  /* color: #324d67; */
   font-size: 15px;
   font-weight: 500;
+  color: var(--btn-dark-green);
   margin-right: 2px;
-  border: 1px solid #f8f6f6;
 }
 
 .navbar-container .auth {
   color: var(--white);
   font-size: 15px;
   font-weight: 500;
-  background: var(--btn-pink);
-  padding: 0.7rem;
+  background: var(--btn-green);
+  padding: 0.5rem 1.25rem;
 }
 
 /* #db8616 */
 .nav:hover {
-  color: var(--btn-pink);
+  color: var(--white);
 }
 
 /* .auth:hover {
@@ -159,7 +164,7 @@ span.text-red {
 
 .cart-icon {
   font-size: 25px;
-  color: gray;
+  color: #808080;
   cursor: pointer;
   position: relative;
   transition: transform 0.4s ease;
@@ -291,10 +296,10 @@ span.text-red {
   /*  */
   border-radius: 4px;
   padding: 13px 18px;
-  background-color: var(--btn-pink);
+  background-color: var(--btn-green);
   color: var(--white);
   border: none;
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: 500;
   cursor: pointer;
   width: 342px;
@@ -362,12 +367,12 @@ span.text-red {
 
 .time-line-body button {
   border-radius: 4px;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   font-weight: 800;
-  background-color: var(--btn-pink);
+  background-color: var(--btn-green);
   color: var(--white);
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -427,7 +432,7 @@ span.text-red {
 .hero-banner-container button {
   border-radius: 4px;
   padding: 13px 18px;
-  background-color: var(--btn-pink);
+  background-color: var(--btn-green);
   color: var(--white);
   border: none;
   margin-top: 80px;
@@ -489,8 +494,9 @@ span.text-red {
   align-self: flex-end;
 }
 
-.products-heading {
-  margin: 40px 0;
+.sub-heading {
+  margin-top: 40px;
+  text-transform: uppercase;
 }
 
 .heading-h2 {
@@ -502,7 +508,7 @@ span.text-red {
 
 .footer-banner-container {
   padding: 100px 40px;
-  background-color: #ff8c00d9;
+  background-color: var(--btn-pink);
   border-radius: 15px;
   line-height: 1;
   color: whitesmoke;
@@ -526,6 +532,7 @@ span.text-red {
   /* margin-bottom: 84px; */
 
   justify-content: center;
+  border-radius: 0.375rem;
   align-items: center;
   height: 400px;
 
@@ -544,12 +551,16 @@ span.text-red {
   background-color: #000000;
   background-repeat: no-repeat;
   background-size: cover;
+  border-top-right-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
 
   position: relative;
 }
 
 .conferences-banner-right {
   padding-bottom: 250px;
+  border-top-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
   padding-top: 250px;
   flex: 1;
   background-image: url("../public/img/Interviews.webp");
@@ -565,7 +576,7 @@ span.text-red {
   width: 500px;
   /* text-align: center; */
   color: white;
-  transform: translate(-50%, -50%);
+  transform: translate(5%, -50%);
   top: 50%;
   left: 50%;
   z-index: 2;
@@ -580,6 +591,29 @@ span.text-red {
   text-transform: uppercase;
 }
 
+.trending-banner-cover {
+  width: 100%;
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.trending-header-img {
+  background-image: url("../public/img/lakeview-elegance.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  border-radius: 0.375rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* .trending-banner-img {
+  trending-banner
+  0707690954,0773884018,0777659193
+} */
 /* InterBanner */
 
 .inter-banner-cover {
@@ -678,9 +712,10 @@ span.text-red {
   line-height: 1rem;
   font-weight: 700;
   height: 44px;
+  width: 11rem;
   border-radius: 6px;
   color: var(--white);
-  background-color: var(--btn-pink);
+  background-color: var(--btn-green);
 }
 
 .email-input {
@@ -795,12 +830,12 @@ span.text-red {
 }
 
 .subscribe {
-  font-family: "Inter", serif;
   font-weight: bold;
   font-size: 14px;
-  color: rgb(67, 67, 67);
+  /* color: rgb(67, 67, 67); */
+  color: var(--white);
   border-style: none;
-  background: var(--btn-pink);
+  background: var(--btn-green);
   width: 30%;
   height: 100%;
   cursor: pointer;
@@ -809,14 +844,14 @@ span.text-red {
 }
 
 .subscribe-text {
-  font-family: "Inter", serif;
   font-weight: normal;
   font-style: normal;
   text-decoration: none;
   text-transform: none;
-  text-align: center;
-  font-size: 18px;
-  color: #324d67;
+  text-align: left;
+  font-size: 16px;
+  color: black;
+  margin-top: 1rem;
 }
 
 .my-auto {
@@ -824,10 +859,21 @@ span.text-red {
   margin-bottom: auto;
 }
 
-.mx-auto {
+.mx-auto,
+.blog-list-more {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.blog-list-more {
+  margin-top: 1rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .banner-desc button {
@@ -896,7 +942,7 @@ span.text-red {
 }
 
 .footer-container {
-  color: #324d67;
+  color: black;
   text-align: center;
   margin-top: 45px;
   padding: 30px 10px;
@@ -906,7 +952,8 @@ span.text-red {
   align-items: center;
   gap: 10px;
   justify-content: center;
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
+  background-color: var(--btn-pink);
 }
 
 .footer-container .icons {
@@ -916,7 +963,7 @@ span.text-red {
 }
 
 .video-text {
-  color: #324d67;
+  color: black;
   margin-bottom: 30px;
 }
 
@@ -946,8 +993,7 @@ span.text-red {
 }
 
 .about-page .login {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 30px;
 }
 
 .about-page p {
@@ -961,20 +1007,6 @@ span.text-red {
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 1rem;
-}
-
-.about-page .team-card {
-  padding: 2.5rem;
-  border-radius: 4px;
-  background: whitesmoke;
-  gap: 10px;
-  display: flex;
-  align-items: stretch;
-}
-
-.about-page .team-card button {
-  display: block;
-  min-width: 100%;
 }
 
 .mission-page ul,
@@ -1557,23 +1589,214 @@ span.text-red {
 }
 
 .card {
-  background-color: rgb(247 244 239);
   display: flex;
   flex-direction: column;
   border-radius: 0.375rem;
-  width: 30%;
   overflow: hidden;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.must-watch-videos .card {
+  width: 32%;
+  background-color: rgb(247 244 239);
+}
+
+.trending-banner-cover .card {
+  width: 23%;
+}
+
+.must-watch-videos .card__preview {
+  height: 9rem;
+  margin-bottom: 1.25rem;
+}
+
+.trending-banner-cover .card__preview {
+  height: 13rem;
+  border-radius: 0.375rem;
+}
+
+.trending-banner-cover .preview__text h3 {
+  margin-top: 5px;
+  line-height: 30px;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.must-watch-videos .preview__text h3 {
+  margin-top: 5px;
+  line-height: 22.556px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.must-watch-videos .preview__text span,
+.trending-banner-cover .preview__text p,
+.trending-banner-cover .preview__text .card__bottom {
+  display: none;
+}
+
+.must-watch-videos .preview__text {
+  padding: 1rem;
+}
+
+.trending-banner-cover .preview__text {
+  padding: 1rem 0;
+  background-color: rgb(247 244 239);
+}
+
+.trending-banner-cover .preview__text span {
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: 1px solid #282828;
+  border-radius: 999px;
+  width: fit-content;
+}
+
+.trending-banner-cover .mx-auto {
+  width: 100%;
+}
+
+.community-banner-cover .mx-auto button,
+.trending-banner-cover .mx-auto button {
+  margin: 0 20px;
+}
+
+.community-content {
+  border-radius: 0.375rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.community-card {
+  background-color: #f5f5f5;
+  border: 1px solid var(--gray-border);
+  border-radius: 0.375rem;
+  padding: 2rem 1rem;
+  cursor: pointer;
+  line-height: 20px;
+  text-align: left;
+  font-size: 16px;
+  margin-top: 1rem;
+}
+
+.community-card .profile {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.community-card span {
+  /* border: 1px solid rgb(255, 216, 216); */
+  padding: 1rem;
+  border-radius: 0.375rem;
+  flex: 1;
+}
+
+.community-card .profile-img {
+  width: 30px;
+  /* Adjust the size as needed */
+  height: 30px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.community-card .profile-img .img {
+  background-image: url("../public/img/profile-lady.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-text .profile-name {
+  /* profile-name */
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.profile-text {
+  margin-left: 0.5rem;
+  font-size: 12px;
+}
+
+.sponsors-banner-cover {
+  border-radius: 0.375rem;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 3rem 1rem;
+  background-color: rgb(255, 216, 216);
+}
+
+.grow-svg {
+  width: 250px;
+  height: 100px;
+}
+
+.top-sponsor {
+  display: flex;
+  justify-content: center;
+}
+
+.sponsors {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  margin: 2rem 0.5rem;
+}
+
+.sponsor {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.cls-1 {
+  fill: #fff;
+}
+
+/* padding: 100px 40px;
+  margin-top: 60px;
+  background-color: red;
+  border-radius: 0.5rem;
+  position: relative;
+  height: 500px;
+  line-height: 0.9;
+} */
+
+.sponsors-banner-cover .text-center {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.trending-banner-cover .text-center {
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .card__preview {
-  height: 9rem;
   width: 100%;
   position: relative;
   overflow: hidden;
-  margin-bottom: 1.25rem;
+  /* margin-bottom: 1.25rem; */
 }
 
 .card__preview .img {
@@ -1623,15 +1846,8 @@ span.text-red {
   transform: scale(1.1);
 }
 
-.preview__text {
-  padding: 1rem;
-}
-
 .preview__text h3 {
-  line-height: 22.556px;
   color: #282828;
-  font-size: 18px;
-  font-weight: 700;
 }
 
 .preview__text p {
@@ -1639,6 +1855,7 @@ span.text-red {
   font-size: 16px;
   font-weight: 400;
   color: rgb(71 70 69);
+  /* display: none; */
 }
 
 .card__address {
@@ -1650,7 +1867,6 @@ span.text-red {
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
-  margin-top: 1rem;
 }
 
 .card__price {
@@ -1741,34 +1957,6 @@ span.text-red {
   /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
 }
 
-.about-page p {
-  font-size: 16px;
-  margin-top: 0px;
-  line-height: 27px;
-}
-
-.about-page h2 {
-  letter-spacing: 2.8px;
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.about-page .team-card {
-  padding: 2.5rem;
-  border-radius: 4px;
-  background: whitesmoke;
-  gap: 10px;
-  display: flex;
-  align-items: stretch;
-  /* align-items: stretch; */
-}
-
-.about-page .team-card button {
-  display: block;
-  min-width: 100%;
-}
-
 .team-card .card-item {
   flex: 1;
   /* background-color: #ffffff; */
@@ -1778,7 +1966,6 @@ span.text-red {
 }
 
 .team-card .card-item h2 {
-  letter-spacing: 4px;
   line-height: 44px;
   font-size: 47px;
   font-weight: 800;
@@ -1820,11 +2007,26 @@ span.text-red {
   letter-spacing: 4.8px;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: var(--btn-pink);
+  background-color: var(--btn-green);
   /* background-color: #007bff; */
   /* color: "white";
   text-align: center;
   padding: 20px; */
+}
+
+.team-card {
+  padding: 2.5rem;
+  border-radius: 0.375rem;
+  background: whitesmoke;
+  gap: 10px;
+  display: flex;
+  align-items: stretch;
+  margin-top: 2rem;
+}
+
+.team-card button {
+  display: block;
+  min-width: 100%;
 }
 
 .about-text {
@@ -1847,11 +2049,11 @@ span.text-red {
   list-style: none;
   gap: 0.75rem;
   line-height: 2rem;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .card-item li svg {
-  color: var(--btn-pink);
+  color: var(--btn-green);
 }
 
 .form-welcome {
@@ -1986,7 +2188,7 @@ span.text-red {
   border: 1px solid var(--primary);
 }
 
-.text-field input:focus+svg {
+.text-field input:focus + svg {
   stroke: var(--primary);
 }
 

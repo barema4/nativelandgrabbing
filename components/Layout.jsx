@@ -12,9 +12,9 @@ const Layout = ({ children }) => {
       </Head>
       <header
         style={{
-          height: "6rem", 
+          height: "4rem", 
           padding: "0 1.2rem",
-          backgroundColor: "whitesmoke",
+          backgroundColor: 'var(--btn-pink)',
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
