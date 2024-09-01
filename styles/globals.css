@@ -293,7 +293,6 @@ span.text-red {
 .time-line-container .content button {
   position: absolute;
   bottom: 10px;
-  /*  */
   border-radius: 4px;
   padding: 13px 18px;
   background-color: var(--btn-green);
@@ -369,13 +368,10 @@ span.text-red {
   border-radius: 4px;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 0.7rem 1rem;
   font-weight: 800;
   background-color: var(--btn-green);
   color: var(--white);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   border: none;
 }
 
@@ -1378,6 +1374,10 @@ span.text-red {
 
 .product-max-qty {
   margin-top: 10px;
+}
+
+.display_0 {
+  display: none;
 }
 
 @media (max-width: 760px) {

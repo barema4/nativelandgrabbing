@@ -1,11 +1,9 @@
 export { default as Footer } from './Footer';
 export { default as Layout } from './Layout';
 export { default as Navbar } from './Navbar';
-export { default as Product } from './Product';
 export { default as HeroBanner } from './HeroBanner';
 export { default as VideoCard } from './VideoCard';
 export { default as FooterBanner } from './FooterBanner';
 export { default as TicketBanner } from './TicketBanner';
-// export { default as InterBanner } from './InterBanner';
 export { default as ConferencesBanner } from './ConferencesBanner';
 export { default as Cart } from './Cart';

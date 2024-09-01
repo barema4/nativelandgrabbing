@@ -1,5 +1,6 @@
 import React from "react";
 import SeparatorX from "../../components/common/SeparatorX";
+import EventsTypeTabs from "./EventsTypeTabs";
 
 const TimeLine = () => {
   return (
@@ -15,6 +16,8 @@ const TimeLine = () => {
           <button>JOIN TEAM NLG</button>
         </div>
       </div>
+      <button>JOIN TEAM NLG</button>
+      {/* <EventsTypeTabs /> */}
       {[1, 2, 3, 4].map((dt) => (
         <div>
           <SeparatorX />

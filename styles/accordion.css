@@ -32,3 +32,8 @@
 .faqs-accordion-header h3 {
     font-weight: normal;
 }
+/* 
+.faqs-chevron-open {
+    transform: rotate(180deg);
+    display: inline-block;
+} */

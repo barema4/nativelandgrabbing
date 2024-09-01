@@ -2,7 +2,7 @@ import React from "react";
 import { ConferencesBanner, HeroBanner, TicketBanner } from "../components";
 import TeamCard from "../components/common/TeamCard";
 import CommunityTalks from "../components/CommunityTalks";
-import Accordion from "../components/faqs/AccordinView";
+import FAQsBanner from "../components/FAQsBanner";
 import SponsorsContainer from "../components/Sponsors/SponsorsContainer";
 import TrendingBanner from "../components/TrendingBanner";
 import BlogList from "./blog/BlogList";
@@ -22,13 +22,13 @@ const Home = () => (
     </div>
 
     <div className="app-wrapper">
-      <BlogList page="home" className="" />
+      <BlogList page="home" />
       <ConferencesBanner />
       <TrendingBanner />
       <SponsorsContainer />
       <CommunityTalks />
       <TeamCard />
-      <Accordion />
+      <FAQsBanner />
     </div>
 
     {/* <InterBanner /> */}
