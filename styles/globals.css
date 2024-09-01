@@ -23,8 +23,7 @@ body,
 * {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Charter", Georgia, Cambria, "Times New Roman", Times, serif;
   box-sizing: border-box;
 }
 
@@ -296,7 +295,7 @@ span.text-red {
   background-color: var(--btn-pink);
   color: var(--white);
   border: none;
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: 500;
   cursor: pointer;
   width: 342px;
@@ -364,7 +363,7 @@ span.text-red {
 
 .time-line-body button {
   border-radius: 4px;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -590,16 +589,9 @@ span.text-red {
 
 .trending-banner-cover {
   width: 100%;
-  /* background-color: red; */
   margin-top: 5rem;
-  /* margin-bottom: 84px; */
-
   justify-content: center;
   align-items: center;
-  /* height: 400px; */
-
-  /* display: flex;
-  position: relative; */
 }
 
 .trending-header-img {
@@ -716,6 +708,7 @@ span.text-red {
   line-height: 1rem;
   font-weight: 700;
   height: 44px;
+  width: 11rem;
   border-radius: 6px;
   color: var(--white);
   background-color: var(--btn-pink);
@@ -833,7 +826,6 @@ span.text-red {
 }
 
 .subscribe {
-  font-family: "Inter", serif;
   font-weight: bold;
   font-size: 14px;
   color: rgb(67, 67, 67);
@@ -847,14 +839,14 @@ span.text-red {
 }
 
 .subscribe-text {
-  font-family: "Inter", serif;
   font-weight: normal;
   font-style: normal;
   text-decoration: none;
   text-transform: none;
-  text-align: center;
-  font-size: 18px;
-  color: #324d67;
+  text-align: left;
+  font-size: 16px;
+  color: black;
+  margin-top: 1rem;
 }
 
 .my-auto {
@@ -945,7 +937,7 @@ span.text-red {
 }
 
 .footer-container {
-  color: #324d67;
+  color: black;
   text-align: center;
   margin-top: 45px;
   padding: 30px 10px;
@@ -955,7 +947,6 @@ span.text-red {
   align-items: center;
   gap: 10px;
   justify-content: center;
-  /* background-color: whitesmoke; */
   background-color: #ff8c00d9;
 }
 
@@ -966,7 +957,7 @@ span.text-red {
 }
 
 .video-text {
-  color: #324d67;
+  color: black;
   margin-bottom: 30px;
 }
 
@@ -1598,7 +1589,8 @@ span.text-red {
   overflow: hidden;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  /* margin-bottom: 1rem; */
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .must-watch-videos .card {
@@ -1623,8 +1615,10 @@ span.text-red {
 .trending-banner-cover .preview__text h3 {
   margin-top: 5px;
   line-height: 30px;
-  font-size: 24px;
+  font-size: 18px;
+  text-align: left;
   font-weight: 600;
+  margin-left: 0.5rem;
 }
 
 .must-watch-videos .preview__text h3 {
@@ -1646,6 +1640,7 @@ span.text-red {
 
 .trending-banner-cover .preview__text {
   padding: 1rem 0;
+  background-color: rgb(247 244 239);
 }
 
 .trending-banner-cover .preview__text span {
@@ -1671,7 +1666,6 @@ span.text-red {
   border-radius: 0.375rem;
   padding-bottom: 1rem;
   width: 100%;
-
   display: flex;
   justify-content: space-between;
   gap: 1rem;
@@ -1683,6 +1677,10 @@ span.text-red {
   border-radius: 0.375rem;
   padding: 2rem 1rem;
   cursor: pointer;
+  line-height: 20px;
+  text-align: left;
+  font-size: 16px;
+  margin-top: 1rem;
 }
 
 .community-card .profile {
@@ -1962,7 +1960,6 @@ span.text-red {
 }
 
 .team-card .card-item h2 {
-  letter-spacing: 4px;
   line-height: 44px;
   font-size: 47px;
   font-weight: 800;
@@ -2046,7 +2043,7 @@ span.text-red {
   list-style: none;
   gap: 0.75rem;
   line-height: 2rem;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .card-item li svg {
@@ -2185,7 +2182,7 @@ span.text-red {
   border: 1px solid var(--primary);
 }
 
-.text-field input:focus+svg {
+.text-field input:focus + svg {
   stroke: var(--primary);
 }
 

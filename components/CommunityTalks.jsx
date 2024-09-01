@@ -23,15 +23,15 @@ const CommunityTalks = ({ page }) => {
     return (
         <div className="community-banner-cover">
             <div className="sub-heading">
-                <h2 className="heading-h2">Frequesntly Asked Questions</h2>
+                <h2 className="heading-h2">Community Highligts</h2>
             </div>
             <div className="community-content">
                 {highlights.map((tx, i) => {
                     return (
                         <div key={i} className="community-card">
-                            <span>
+                            {/* <span> */}
                                 {tx.content.slice(0, 100)} ...
-                            </span>
+                            {/* </span> */}
                             <div className="profile">
                                 <div className="profile-img">
                                     <div className="img"></div>
@@ -47,7 +47,7 @@ const CommunityTalks = ({ page }) => {
             </div>
             <div className="mx-auto">
                 <SeparatorX />
-                <SubmitButton text="more" path="/explore" />
+                <SubmitButton text="Watch More" path="/explore" />
                 <SeparatorX />
             </div>
         </div>

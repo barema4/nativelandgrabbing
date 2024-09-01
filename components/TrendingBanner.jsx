@@ -16,7 +16,7 @@ const TrendingBanner = ({ page }) => {
                 })}
                 <div className="mx-auto">
                     <SeparatorX />
-                    <SubmitButton text="more" path="/explore" />
+                    <SubmitButton text="Watch More" path="/explore" />
                     <SeparatorX />
                 </div>
             </div>
