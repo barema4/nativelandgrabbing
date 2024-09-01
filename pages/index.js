@@ -1,8 +1,13 @@
 import React from "react";
 import { ConferencesBanner, HeroBanner, TicketBanner } from "../components";
-import SubmitButton from "../components/common/SubmitButton";
+import TeamCard from "../components/common/TeamCard";
+import CommunityTalks from "../components/CommunityTalks";
+import AccordionDemo from "../components/faqs/Accordin";
+import SponsorsContainer from "../components/Sponsors/SponsorsContainer";
+import TrendingBanner from "../components/TrendingBanner";
 import BlogList from "./blog/BlogList";
 import EventsList from "./events";
+// import FAQs from "../components/FAQs";
 
 const Home = () => (
   <div className="">
@@ -13,19 +18,20 @@ const Home = () => (
       <TicketBanner />
     </div>
 
-    <div className="products-heading">
+    <div className="sub-heading">
       <h2 className="app-wrapper heading-h2">MUST WATCH VIDEOS</h2>
     </div>
 
     <div className="app-wrapper">
       <BlogList page="home" className="" />
+      <ConferencesBanner />
+      <TrendingBanner />
+      <SponsorsContainer />
+      <CommunityTalks />
+      {/* <AccordionDemo /> */}
+      <TeamCard />
     </div>
 
-    <div className="mx-auto">
-      <SubmitButton text="watch all" path="/explore" className="" />
-    </div>
-
-    <ConferencesBanner />
     {/* <InterBanner /> */}
 
     {/* <div className="app-wrapper">

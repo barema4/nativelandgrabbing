@@ -91,6 +91,9 @@ export default function BlogCard({ post, className }) {
           </div>
         </div>
         <div className="preview__text">
+          {/* <div className="tag">
+            <span>Melbourne, Australia</span>
+          </div> */}
           <h3>{post?.title}</h3>
           <p>
             {post?.metadata?.content?.slice(0, 100)}
