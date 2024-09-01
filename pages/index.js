@@ -2,15 +2,14 @@ import React from "react";
 import { ConferencesBanner, HeroBanner, TicketBanner } from "../components";
 import TeamCard from "../components/common/TeamCard";
 import CommunityTalks from "../components/CommunityTalks";
-import AccordionDemo from "../components/faqs/Accordin";
+import Accordion from "../components/faqs/AccordinView";
 import SponsorsContainer from "../components/Sponsors/SponsorsContainer";
 import TrendingBanner from "../components/TrendingBanner";
 import BlogList from "./blog/BlogList";
 import EventsList from "./events";
-// import FAQs from "../components/FAQs";
 
 const Home = () => (
-  <div className="">
+  <div>
     <EventsList />
     <HeroBanner />
 
@@ -28,7 +27,7 @@ const Home = () => (
       <TrendingBanner />
       <SponsorsContainer />
       <CommunityTalks />
-      {/* <AccordionDemo /> */}
+      <Accordion />
       <TeamCard />
     </div>
 

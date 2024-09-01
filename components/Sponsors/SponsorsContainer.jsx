@@ -14,35 +14,46 @@ import TopSponsor from "./Icons/TopSponsor";
 
 const SponsorsContainer = ({ page }) => {
     return (
-        <div className="sponsors-banner-cover">
-            <div className="top-sponsor">
-                <Sponsor4 className="grow-svg" />
+        <div>
+            <div className="community-banner-cover">
+                <div className="sub-heading">
+                    <h2 className="heading-h2">Our Sponsors</h2>
+                </div>
             </div>
-            <p className="text-center">Grateful to our sponsors for their generous support.</p>
-            <div className="sponsors">
-                <div className="sponsor">
-                    <Sponsor3 />
+
+
+
+            <div className="sponsors-banner-cover">
+                <div className="top-sponsor">
+                    <Sponsor4 className="grow-svg" />
                 </div>
-                <div className="sponsor">
-                    <Sponsor2 />
-                </div>
-                <div className="sponsor">
-                    <Sponsor6 />
-                </div>
-                <div className="sponsor">
-                    <Sponsor1 />
-                </div>
-                <div className="sponsor">
-                    <Sponsor4 />
-                </div>
-                <div className="sponsor">
-                    <Sponsor5 />
-                </div>
-                <div className="sponsor">
-                    <Sponsor7 />
+                <p className="text-center">Grateful to our sponsors for their generous support.</p>
+                <div className="sponsors">
+                    <div className="sponsor">
+                        <Sponsor3 />
+                    </div>
+                    <div className="sponsor">
+                        <Sponsor2 />
+                    </div>
+                    <div className="sponsor">
+                        <Sponsor6 />
+                    </div>
+                    <div className="sponsor">
+                        <Sponsor1 />
+                    </div>
+                    <div className="sponsor">
+                        <Sponsor4 />
+                    </div>
+                    <div className="sponsor">
+                        <Sponsor5 />
+                    </div>
+                    <div className="sponsor">
+                        <Sponsor7 />
+                    </div>
                 </div>
             </div>
         </div>
+
     );
 };
 

@@ -1,4 +1,5 @@
 /* @import url('./faqs.css'); */
+@import url('./accordion.css');
 
 :root {
   --primary: #111926;
@@ -8,6 +9,8 @@
   --text: #262626;
   --like: #ff3040;
   --btn-pink: #ff8c00d9;
+  --btn-green: #009900;
+  --btn-dark-green: #003300;
   --banner-color: #ebebeb;
   --separator-color: #e8e7e2;
 
@@ -79,11 +82,12 @@ button {
 }
 
 .navbar-container .logo {
-  background-color: var(--btn-pink);
+  background-color: var(--btn-green);
   color: var(--white);
   font-size: 20px;
   font-weight: 700;
-  padding: 0.7rem;
+  /* padding: 0.7rem; */
+  padding: 0.5rem 1.25rem;
   border-radius: 3rem;
   letter-spacing: 0.2rem;
   margin-right: 0.5rem;
@@ -91,24 +95,24 @@ button {
 
 .navbar-container .nav {
   background-color: transparent;
-  color: #324d67;
+  /* color: #324d67; */
   font-size: 15px;
   font-weight: 500;
+  color: var(--btn-dark-green);
   margin-right: 2px;
-  border: 1px solid #f8f6f6;
 }
 
 .navbar-container .auth {
   color: var(--white);
   font-size: 15px;
   font-weight: 500;
-  background: var(--btn-pink);
-  padding: 0.7rem;
+  background: var(--btn-green);
+  padding: 0.5rem 1.25rem;
 }
 
 /* #db8616 */
 .nav:hover {
-  color: var(--btn-pink);
+  color: var(--white);
 }
 
 /* .auth:hover {
@@ -292,7 +296,7 @@ span.text-red {
   /*  */
   border-radius: 4px;
   padding: 13px 18px;
-  background-color: var(--btn-pink);
+  background-color: var(--btn-green);
   color: var(--white);
   border: none;
   font-size: 0.75rem;
@@ -368,7 +372,7 @@ span.text-red {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   font-weight: 800;
-  background-color: var(--btn-pink);
+  background-color: var(--btn-green);
   color: var(--white);
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -428,7 +432,7 @@ span.text-red {
 .hero-banner-container button {
   border-radius: 4px;
   padding: 13px 18px;
-  background-color: var(--btn-pink);
+  background-color: var(--btn-green);
   color: var(--white);
   border: none;
   margin-top: 80px;
@@ -504,7 +508,7 @@ span.text-red {
 
 .footer-banner-container {
   padding: 100px 40px;
-  background-color: #ff8c00d9;
+  background-color: var(--btn-pink);
   border-radius: 15px;
   line-height: 1;
   color: whitesmoke;
@@ -711,7 +715,7 @@ span.text-red {
   width: 11rem;
   border-radius: 6px;
   color: var(--white);
-  background-color: var(--btn-pink);
+  background-color: var(--btn-green);
 }
 
 .email-input {
@@ -828,9 +832,10 @@ span.text-red {
 .subscribe {
   font-weight: bold;
   font-size: 14px;
-  color: rgb(67, 67, 67);
+  /* color: rgb(67, 67, 67); */
+  color: var(--white);
   border-style: none;
-  background: var(--btn-pink);
+  background: var(--btn-green);
   width: 30%;
   height: 100%;
   cursor: pointer;
@@ -947,7 +952,8 @@ span.text-red {
   align-items: center;
   gap: 10px;
   justify-content: center;
-  background-color: #ff8c00d9;
+  /* background-color: whitesmoke; */
+  background-color: var(--btn-pink);
 }
 
 .footer-container .icons {
@@ -1730,7 +1736,7 @@ span.text-red {
 .sponsors-banner-cover {
   border-radius: 0.375rem;
   width: 100%;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   padding: 3rem 1rem;
   background-color: rgb(255, 216, 216);
 }
@@ -2001,7 +2007,7 @@ span.text-red {
   letter-spacing: 4.8px;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: var(--btn-pink);
+  background-color: var(--btn-green);
   /* background-color: #007bff; */
   /* color: "white";
   text-align: center;
@@ -2047,7 +2053,7 @@ span.text-red {
 }
 
 .card-item li svg {
-  color: var(--btn-pink);
+  color: var(--btn-green);
 }
 
 .form-welcome {
